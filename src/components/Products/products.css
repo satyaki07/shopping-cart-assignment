@@ -1,0 +1,132 @@
+.products-page {
+    margin-top: 6rem;
+    display: flex;
+    padding: 0 6rem;
+}
+
+.sidebar {
+    background-color: #DADADA;
+    min-width: 20%;
+    max-width: 20%;
+}
+
+.category-list {
+    color: #6D6D6D;
+    list-style: none;
+    padding: .9rem;
+    border-bottom: 1.5px solid #AEAEAE;
+    cursor: pointer;
+    transition: all .4s;
+}
+
+.category-list:hover {
+    color: black;
+}
+
+.product-details {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+.product-container {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding: 10px;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.product-desc {
+    font-size: .8rem;
+    background: #c8cbce61;
+    min-height: 50px;
+    max-height: 50px;
+    overflow: auto;
+    padding: 5px;
+}
+
+.cart-btn {
+    border: none;
+    background: #d00156;
+    color: white;
+    font-size: 13px;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.cart-btn:hover {
+    background: #e02673;
+}
+
+.product-desc-container-mobile {
+    display: none;
+}
+
+.price-container {
+    display: flex;
+    margin-top: 3px;
+    justify-content: space-between;
+}
+
+.price-container-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 780px) {
+
+    .products-page {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .product-desc-container-mobile {
+        display: flex;
+        gap: 0.5rem;
+    }
+
+    .product-desc-container {
+        display: none;
+    }
+
+    .product-desc-mobile {
+        display: block;
+        font-size: 11px;
+        background: #c8cbce61;
+        padding: 10px;
+        overflow: auto;
+        text-align: justify;
+    }
+
+    .image-container-mobile {
+        display: block;
+    }
+
+    .price-container {
+        display: none;
+    }
+
+    .cart-btn-mobile {
+        width: 100%;
+        display: block;
+        margin-top: 3px;
+        background: #d00156;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+    }
+}
+
+@media screen and (min-width:480px) and (max-width:780px) {
+    .product-container {
+        height: 100%;
+        width: 48%;
+    }
+}
+
